@@ -1,0 +1,5 @@
+Pages\Home.class
+Pages\LoginPage.class
+Pages\AppData.class
+Pages\CommonActions.class
+Pages\Registration.class

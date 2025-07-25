@@ -3,6 +3,7 @@ import Pages.CommonActions;
 import Pages.Home;
 import Pages.Registration;
 import org.junit.Assert;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 
 import org.testng.annotations.AfterMethod;
@@ -36,6 +37,9 @@ public class RegistrationTestCases implements AppData {
         String nextPage = driver.getTitle();
         Assert.assertEquals("Register Account", nextPage);
         System.out.println("Current page title: " + nextPage);
+
+        TakesScreenshot ts = (TakesScreenshot) driver;
+
     }
 
     @AfterMethod
