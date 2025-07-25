@@ -38,7 +38,11 @@ public class RegistrationTestCases implements AppData {
         Assert.assertEquals("Register Account", nextPage);
         System.out.println("Current page title: " + nextPage);
 
-        TakesScreenshot ts = (TakesScreenshot) driver;
+    }
+
+    public void verifyLoginWithValidCredentials() {
+        home.clickMyAccount();
+        home.clickLogin();
 
     }
 
