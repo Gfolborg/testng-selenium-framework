@@ -1,23 +1,16 @@
 import Pages.*;
 import org.junit.Assert;
-import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
-
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import java.time.Duration;
-
 
 public class RegistrationTestCases implements AppData {
-    WebDriver driver = CommonActions.openBrowser(BROWSER_TYPE);
-    CommonActions actions = new CommonActions();
-    Home home = new Home(driver);
-    Registration register = new Registration(driver);
-    LoginPage login = new LoginPage(driver);
-    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+    private WebDriver driver;
+    private CommonActions actions;
+    private Home home;
+    private Registration register;
 
     @BeforeMethod
     public void openBrowser(){
@@ -25,33 +18,26 @@ public class RegistrationTestCases implements AppData {
     }
 
     @Test
-    public void verifyRegistrationSignUp()  {
-        home.clickMyAccount();
-        home.clickRegistration();
-        register.firstNameInput(AppData.VALID_FIRSTNAME);
-        register.lastNameInput(AppData.VALID_LASTNAME);
-        register.emailInput(AppData.VALID_EMAIL);
-        register.telephoneInput(TELEPHONE);
-        register.passwordConfirm(AppData.VALID_PASSWORD, AppData.VALID_PASSWORD);
-        register.newsletterSubscribeButton("Yes");
-        register.privatePolicyCheckbox();
-        register.continueButton();
-        String nextPage = driver.getTitle();
-        Assert.assertEquals("Register Account", nextPage);
-        System.out.println("Current page title: " + nextPage);
+    public void verifyRegistrationSignUp() {
+        //Fills Out Registration Form
+        home.clickMyAccount()
+                .clickRegistration();
+        register.firstNameInput(AppData.FIRSTNAME)
+                .lastNameInput(AppData.LASTNAME)
+                .emailInput(AppData.EMAIL)
+                .telephoneInput(TELEPHONE)
+                .passwordConfirm(AppData.PASSWORD, AppData.PASSWORD)
+                .newsletterSubscribeButton("Yes")
+                .privatePolicyCheckbox()
+                .continueButton();
 
-    }
-
-
-    @Test
-    public void verifyLoginWithValidCredentials() {
-        home.clickMyAccount();
-        home.clickLogin();
-        login.enterValidEmail(AppData.VALID_EMAIL);
-        login.enterValidPassword(AppData.VALID_PASSWORD);
-        login.clickLogin();
+        //Validate Registration
         String pageTitle = driver.getTitle();
-        Assert.assertEquals("Account Login", pageTitle);
+        if(!pageTitle.equals("Your Account Has Been Created!")) {
+            Assert.fail("Verify Registration Sign Up = FAILED \nReason: E-Mail Address is already registered! \n \nTest Data \n Email: John.Smith@gmail.com \n Password: Test@1234");
+        } else {
+            Assert.assertEquals("Verify Registration Sign Up = PASSED", "Your Account Has Been Created!", pageTitle);
+        }
     }
 
     @AfterMethod

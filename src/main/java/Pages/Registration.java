@@ -34,39 +34,46 @@ public class Registration implements AppData{
     WebElement privacyCheck;
 
 
-    public void firstNameInput(String firstName){
+    public Registration firstNameInput(String firstName){
         fName.sendKeys(firstName);
+        return this;
     }
 
-    public void lastNameInput(String lastName){
+    public Registration lastNameInput(String lastName){
         lName.sendKeys(lastName);
+        return this;
     }
 
-    public void emailInput(String email){
+    public Registration emailInput(String email){
         emailTextBox.sendKeys(email);
+        return this;
     }
 
-    public void telephoneInput(String phoneNumber){
+    public Registration telephoneInput(String phoneNumber){
         phone.sendKeys(TELEPHONE);
+        return this;
     }
 
-    public void passwordConfirm(String password, String passwordConfirm) {
+    public Registration passwordConfirm(String password, String passwordConfirm) {
         passwordInput.sendKeys(password);
         passwordConfirmation.sendKeys(passwordConfirm);
+        return this;
     }
 
-    public void newsletterSubscribeButton(String yesOrNo) {
+    public Registration newsletterSubscribeButton(String yesOrNo) {
         if (yesOrNo.equalsIgnoreCase("Yes")) {
             newsletterYesLabel.click();
         }
+        return this;
 
     }
-    public void privatePolicyCheckbox() {
+    public Registration privatePolicyCheckbox() {
         privacyCheck.click();
+        return this;
     }
 
-    public void continueButton(){
+    public Registration continueButton(){
         continueButton.click();
-
+        return this;
     }
 }

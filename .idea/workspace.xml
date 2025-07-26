@@ -5,17 +5,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fcad7ce7-528b-44c6-babb-f07706f1f6b5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Pages/Screenshot.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/LoginPageTestCases.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Pages/AppData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/AppData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/CommonActions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/CommonActions.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Pages/Home.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/Home.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/LoginPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Pages/Registration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/Registration.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/RegistrationTestCases.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RegistrationTestCases.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Pages/AppData.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Pages/AppData.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Pages/CommonActions.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Pages/CommonActions.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Pages/Home.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Pages/Home.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Pages/LoginPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Pages/LoginPage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Pages/Registration.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Pages/Registration.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/RegistrationTestCases.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/RegistrationTestCases.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/Default Suite/testng-failed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/Default Suite/testng-failed.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/emailable-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/emailable-report.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/junitreports/TEST-RegistrationTestCases.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/junitreports/TEST-RegistrationTestCases.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/testng-failed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/testng-failed.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/testng-results.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/testng-results.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testng-selenium-framework" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,36 +56,78 @@
   &quot;associatedIndex&quot;: 2
 }</component>
   <component name="ProjectId" id="30FzPLeS8ofZA7p9qBqnXFGLied" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Home.executor&quot;: &quot;Run&quot;,
-    &quot;Application.LoginPage.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.RegistrationTestCases.verifyRegistrationSignUp.executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;TestNG.RegistrationTestCases.clickMyAccount.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.RegistrationTestCases.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.RegistrationTestCases.verifyLoginWithValidCredentials.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.RegistrationTestCases.verifyRegistrationSignUp.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/gyasi/IdeaProjects/GuidedProject/src/main/java/org/Janbask/Main.java&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Home.executor": "Run",
+    "Application.LoginPage.executor": "Run",
+    "JUnit.RegistrationTestCases.verifyRegistrationSignUp.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "TestNG.LoginPageTestCases (1).executor": "Run",
+    "TestNG.LoginPageTestCases (2).executor": "Run",
+    "TestNG.LoginPageTestCases.executor": "Run",
+    "TestNG.LoginPageTestCases.verifyLoginWithValidCredentials.executor": "Run",
+    "TestNG.RegistrationTestCases.clickMyAccount.executor": "Run",
+    "TestNG.RegistrationTestCases.executor": "Run",
+    "TestNG.RegistrationTestCases.verifyLoginWithValidCredentials.executor": "Run",
+    "TestNG.RegistrationTestCases.verifyRegistrationSignUp.executor": "Run",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "onboarding.tips.debug.path": "C:/Users/gyasi/IdeaProjects/GuidedProject/src/main/java/org/Janbask/Main.java",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   }
-}</component>
-  <component name="RunManager" selected="TestNG.RegistrationTestCases.verifyLoginWithValidCredentials">
-    <configuration name="RegistrationTestCases.verifyRegistrationSignUp" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+}]]></component>
+  <component name="RunManager" selected="TestNG.LoginPageTestCases">
+    <configuration name="LoginPageTestCases (1)" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="QA_Automation_Project" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="RegistrationTestCases" />
-      <option name="METHOD_NAME" value="verifyRegistrationSignUp" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="MAIN_CLASS_NAME" value="LoginPageTestCases" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginPageTestCases (2)" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="QA_Automation_Project" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="LoginPageTestCases" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginPageTestCases" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="QA_Automation_Project" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="LoginPageTestCases" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginPageTestCases.verifyLoginWithValidCredentials" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="QA_Automation_Project" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="LoginPageTestCases" />
+      <option name="METHOD_NAME" value="verifyLoginWithValidCredentials" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -89,67 +143,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RegistrationTestCases.clickMyAccount" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="QA_Automation_Project" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="RegistrationTestCases" />
-      <option name="METHOD_NAME" value="clickMyAccount" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RegistrationTestCases.verifyLoginWithValidCredentials" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="QA_Automation_Project" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="RegistrationTestCases" />
-      <option name="METHOD_NAME" value="verifyLoginWithValidCredentials" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RegistrationTestCases.verifyRegistrationSignUp" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="QA_Automation_Project" />
-      <shortenClasspath name="NONE" />
-      <useClassPathOnly />
-      <option name="SUITE_NAME" value="" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="RegistrationTestCases" />
-      <option name="METHOD_NAME" value="verifyRegistrationSignUp" />
-      <option name="GROUP_NAME" value="" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <option name="PARAMETERS" value="" />
-      <option name="OUTPUT_DIRECTORY" value="" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="true" />
-      <option name="PROPERTIES_FILE" value="" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
-      <item itemvalue="JUnit.RegistrationTestCases.verifyRegistrationSignUp" />
-      <item itemvalue="TestNG.RegistrationTestCases.verifyLoginWithValidCredentials" />
+      <item itemvalue="TestNG.LoginPageTestCases" />
+      <item itemvalue="TestNG.LoginPageTestCases (1)" />
+      <item itemvalue="TestNG.LoginPageTestCases (2)" />
+      <item itemvalue="TestNG.LoginPageTestCases.verifyLoginWithValidCredentials" />
       <item itemvalue="TestNG.RegistrationTestCases" />
-      <item itemvalue="TestNG.RegistrationTestCases.clickMyAccount" />
-      <item itemvalue="TestNG.RegistrationTestCases.verifyRegistrationSignUp" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.RegistrationTestCases.verifyLoginWithValidCredentials" />
-        <item itemvalue="TestNG.RegistrationTestCases.verifyRegistrationSignUp" />
+        <item itemvalue="TestNG.LoginPageTestCases" />
         <item itemvalue="TestNG.RegistrationTestCases" />
-        <item itemvalue="TestNG.RegistrationTestCases.clickMyAccount" />
-        <item itemvalue="JUnit.RegistrationTestCases.verifyRegistrationSignUp" />
+        <item itemvalue="TestNG.LoginPageTestCases (2)" />
+        <item itemvalue="TestNG.LoginPageTestCases (1)" />
+        <item itemvalue="TestNG.LoginPageTestCases.verifyLoginWithValidCredentials" />
       </list>
     </recent_temporary>
   </component>

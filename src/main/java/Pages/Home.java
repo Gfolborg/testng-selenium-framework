@@ -1,6 +1,5 @@
 package Pages;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -27,22 +26,26 @@ public class Home implements AppData {
     @FindBy(xpath = "//input[@name='search' and @class='form-control input-lg']")
     WebElement searchBox;
 
-    public void clickMyAccount(){
+    public Home clickMyAccount(){
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         myAccountButton.click();
         wait.until(ExpectedConditions.visibilityOf(loginButton));
+        return this;
     }
 
-    public void clickLogin(){
+    public Home clickLogin(){
         loginButton.click();
+        return this;
     }
 
-    public void clickRegistration(){
+    public Home clickRegistration(){
         registrationButton.click();
+        return this;
     }
 
-    public  void searchItem(String item) {
+    public Home searchItem(String item) {
         searchBox.sendKeys(item);
+        return this;
     }
 
 }
