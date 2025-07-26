@@ -8,7 +8,6 @@ import org.openqa.selenium.support.PageFactory;
 
 public class Registration implements AppData{
     WebDriver driver;
-    CommonActions action = new CommonActions();
 
     public Registration(WebDriver driver) {
         this.driver=driver;
@@ -51,12 +50,12 @@ public class Registration implements AppData{
         phone.sendKeys(TELEPHONE);
     }
 
-    public void passwordConfirm(String password, String passwordConfirm) throws InterruptedException {
+    public void passwordConfirm(String password, String passwordConfirm) {
         passwordInput.sendKeys(password);
         passwordConfirmation.sendKeys(passwordConfirm);
     }
 
-    public void newsletterSubscribeButton(String yesOrNo) throws InterruptedException {
+    public void newsletterSubscribeButton(String yesOrNo) {
         if (yesOrNo.equalsIgnoreCase("Yes")) {
             newsletterYesLabel.click();
         }

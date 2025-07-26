@@ -1,14 +1,14 @@
-import Pages.AppData;
-import Pages.CommonActions;
-import Pages.Home;
-import Pages.Registration;
+import Pages.*;
 import org.junit.Assert;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+
+import java.time.Duration;
 
 
 public class RegistrationTestCases implements AppData {
@@ -16,6 +16,8 @@ public class RegistrationTestCases implements AppData {
     CommonActions actions = new CommonActions();
     Home home = new Home(driver);
     Registration register = new Registration(driver);
+    LoginPage login = new LoginPage(driver);
+    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
     @BeforeMethod
     public void openBrowser(){
@@ -23,7 +25,7 @@ public class RegistrationTestCases implements AppData {
     }
 
     @Test
-    public void verifyRegistrationSignUp() throws InterruptedException {
+    public void verifyRegistrationSignUp()  {
         home.clickMyAccount();
         home.clickRegistration();
         register.firstNameInput(AppData.VALID_FIRSTNAME);
@@ -40,10 +42,16 @@ public class RegistrationTestCases implements AppData {
 
     }
 
+
+    @Test
     public void verifyLoginWithValidCredentials() {
         home.clickMyAccount();
         home.clickLogin();
-
+        login.enterValidEmail(AppData.VALID_EMAIL);
+        login.enterValidPassword(AppData.VALID_PASSWORD);
+        login.clickLogin();
+        String pageTitle = driver.getTitle();
+        Assert.assertEquals("Account Login", pageTitle);
     }
 
     @AfterMethod

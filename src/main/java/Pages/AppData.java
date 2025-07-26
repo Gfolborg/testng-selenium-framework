@@ -2,7 +2,7 @@ package Pages;
 
 
 public interface AppData {
-    String BROWSER_TYPE = "Firefox";
+    String BROWSER_TYPE = "Chrome";
     String VALID_EMAIL = "John.Smit@gmail.com";
     String VALID_PASSWORD = "Test@123";
     String INVALID_EMAIL = "Kevin.Jenkies@gmail.com";

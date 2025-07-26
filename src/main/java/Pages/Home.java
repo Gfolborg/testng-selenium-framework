@@ -22,15 +22,15 @@ public class Home implements AppData {
     WebElement myAccountButton;
     @FindBy(xpath = "//a[text()='Register']")
     WebElement registrationButton;
-    @FindBy(partialLinkText = "account/login")
+    @FindBy(xpath = "//a[contains(@href, 'account/login')]")
     WebElement loginButton;
     @FindBy(xpath = "//input[@name='search' and @class='form-control input-lg']")
     WebElement searchBox;
 
     public void clickMyAccount(){
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[@title='My Account']")));
         myAccountButton.click();
+        wait.until(ExpectedConditions.visibilityOf(loginButton));
     }
 
     public void clickLogin(){

@@ -5,11 +5,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class LoginPage implements AppData {
+public class LoginPage implements AppData{
     WebDriver driver;
 
-    public LoginPage(WebDriver driver) {
-        this.driver = driver;
+    public LoginPage(WebDriver driver){
+        this.driver=driver;
         PageFactory.initElements(driver, this);
     }
 
@@ -21,7 +21,7 @@ public class LoginPage implements AppData {
     WebElement loginButton;
 
 
-    public void enterValidEmail(String email) {
+    public void enterValidEmail(String email){
         emailInput.sendKeys(email);
     }
 
@@ -37,7 +37,6 @@ public class LoginPage implements AppData {
     public void enterInvalidPassword(String password) {
         passwordInput.sendKeys(password);
     }
-
     public void enterInvalidEmail(String email) {
         emailInput.sendKeys(email);
     }
@@ -45,6 +44,6 @@ public class LoginPage implements AppData {
     public void clickLogin() {
         loginButton.click();
 
-
     }
+
 }
