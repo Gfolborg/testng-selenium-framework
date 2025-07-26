@@ -15,7 +15,7 @@ public class LoginPageTestCases implements AppData {
         actions.enterUrl();
     }
 
-    @Test //Test Fails. Unable to continue due to Showstopper bug. Severe Bug reported.
+    @Test(priority = 1, description = "Login fails with valid username and password") //Bug will be reported, dev team notified
     public void verifyLoginWithValidCredentials() throws InterruptedException {
         Home home = new Home(driver);
         LoginPage login = new LoginPage(driver);

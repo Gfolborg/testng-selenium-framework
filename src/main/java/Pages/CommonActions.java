@@ -18,6 +18,7 @@ public class CommonActions {
     static WebDriver driver;
 
 
+    //Allows testing to be conducted in different browsers
     static public WebDriver openBrowser(String browserType) {
         if (browserType.equals("Chrome")) {
             driver = new ChromeDriver();
