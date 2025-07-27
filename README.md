@@ -1,7 +1,7 @@
 # Selenium TestNG Framework
 
 This is a project to practice and test my Automation skills by automating user flow for
-a demo ecommerce website using Selenium WebDriver with Java.
+TutorialsNinja demo e-commerce using Selenium WebDriver with Java.
 
 # Tech Stack
 - Java 24.0.1
